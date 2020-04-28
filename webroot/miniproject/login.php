@@ -1,6 +1,8 @@
 <?php
   $Username = $POST["username"];
   $Password = $POST["password"];
+   $sql = "SELECT * USERS (firstName, lastName, email, password)
+   VALUES ('$fname', '$sname', '$email', '$pass1')";
 
   if ($Username=="Rohan" && $Password=="password")
   {
