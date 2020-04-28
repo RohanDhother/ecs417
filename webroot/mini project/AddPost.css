@@ -1,0 +1,32 @@
+body {width: 30%;
+      margin: auto;
+      padding-top: 1vw;}
+h1 { color: white;
+  font-size: 2vw;
+  padding-bottom: 1vw;
+  text-align: center;}
+#addpost-box {background-color: black;
+padding: 1vw 2vw;
+overflow:auto;
+border-radius: 4px;
+color: white;
+overflow: auto;}
+textarea {
+          resize: none;
+          width: 100%;
+          min-height: 10vw;}
+#text {height: 5vw;}
+#addpost-box input, textarea {font-size: 1vw;
+                  border-radius: 2px;
+                  padding: 1vw 1vw;}
+#top input, textarea {width: 100%;}
+#top div {padding-bottom: 1vw;}
+#bottom {padding: 1vw 1vw;
+        width: 12vw;
+        margin: auto;}
+#submit {float: left; width: auto;
+        padding-right: 1vw;}
+#submit input {width: 5vw;}
+#clear {float: left; width: auto;
+        padding-left: 1vw;}
+#clear input {width: 5vw;}
