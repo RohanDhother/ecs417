@@ -15,11 +15,11 @@
         top:0;
         z-index: 3;}
   /*a*/
-  #nav em {background-color: inherit;}
   #nav a, em {font-size: 1.2vw;}
-  #nav input, em {background-color: inherit;
+  #nav input, em {
     padding: 2vw 2vw;
     color: white;}
+  #nav input {background-color: inherit;}
   #nav em {font-weight: bold;
             padding: 1vw 2vw;}
   #nav input:hover {background-color: white;
