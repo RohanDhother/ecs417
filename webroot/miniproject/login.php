@@ -6,7 +6,8 @@
   $dbuser = getenv("DATABASE_USER");
   $dbpwd = getenv("DATABASE_PASSWORD");
   $dbname = getenv("DATABASE_NAME");
-  $Postlists = array();
+  echo "<p>Username: " . $Username;
+  echo "<p>Password: " . $Password;
   // Creates connection
   $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
   // Checks connection
@@ -33,7 +34,7 @@
       }
     }
     else {
-      echo "test4";
+      echo "<p>test4";
     }
 }
 $conn->close();
