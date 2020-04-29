@@ -27,8 +27,8 @@ if ($conn->connect_error) {
 }
 $conn->close();
 $Posts = document.getElementById('Posts');
-$i = 0;
-for(i = 0; i<2; i++)
+$i;
+for($i = 0; $i<2; $i++)
 {
   $Blogbox = document.createElement('div');
   $Blogbox.className('Blog-box');
