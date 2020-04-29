@@ -28,7 +28,8 @@ else {
 }
 }
 $conn->close();
-echo '<script src="viewBlog.js"></script>';
+return $Postlists;
+//echo '<script src="viewBlog.js"></script>';
 // echo '<script type="text/JavaScript">
 //       let Posts = document.getElementById('Posts');
 //       let i = 0;
