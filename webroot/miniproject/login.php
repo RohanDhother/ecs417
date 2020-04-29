@@ -16,7 +16,7 @@
   else {
     $sql = "SELECT password FROM USER WHERE username=$Username)";
     $password = $conn->query($sql);
-    if($password)
+    if($conn->query($sql) == TRUE)
     {
       if ($Password==$password)
       {
@@ -29,7 +29,7 @@
       }
     }
     else {
-      echo "$password";
+      echo $password;
       echo "test4";
     }
 }
