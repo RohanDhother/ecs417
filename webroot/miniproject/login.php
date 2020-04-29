@@ -14,24 +14,24 @@
    die("Connection failed: " . $conn->connect_error);
   }
   else {
-  $sql = "SELECT password FROM USER WHERE username=$Username)";
-  $password = $conn->query($sql);
-  echo $password;
-  if($password)
-  {
-    if ($Password==$password)
+    $sql = "SELECT password FROM USER WHERE username=$Username)";
+    $password = $conn->query($sql);
+    echo "$password";
+    if($password)
     {
-      session_start();
-      echo "You are logged";
-      // include 'AddPost.html';
+      if ($Password==$password)
+      {
+        session_start();
+        echo "You are logged";
+        // include 'AddPost.html';
+      }
+      else {
+        echo "test3";
+      }
     }
     else {
-      echo "test3";
+      echo "test4";
     }
-  }
-  else {
-    echo "test4";
-  }
 }
 $conn->close();
 ?>
