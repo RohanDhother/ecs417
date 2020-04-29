@@ -1,13 +1,16 @@
 <?php
   $Username = $POST["username"];
   $Password = $POST["password"];
-   $sql = "SELECT * USERS (firstName, lastName, email, password)
-   VALUES ('$fname', '$sname', '$email', '$pass1')";
-
-  if ($Username=="Rohan" && $Password=="password")
+   $sql = "SELECT password FROM USER WHERE username=$Username)";
+   $result = $conn->query($sql);
+   if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+        $password = $row["password"];
+      }
+    }
+  if ($Password==$password)
   {
     session_start();
-    echo "<style> #login-box {display: none;}</style>";
     echo "You are logged";
   }
 ?>
