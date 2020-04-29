@@ -2,7 +2,7 @@
 $Title = $POST["title"];
 $Content = $POST["content"];
 $Date = date("d/m/Y");
-$Time = "time";
+$Time = date("H:i");
 $Password = $POST["password"];
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
