@@ -30,8 +30,8 @@ else {
 $conn->close();
 echo '<script type="text/JavaScript">
 var Posts = document.getElementById('Posts');
-$i = 0;
-while($i<2)
+var i = 0;
+while(i<2)
 {
   var Blogbox = document.createElement('div');
   Blogbox.className('Blog-box');
@@ -51,7 +51,7 @@ while($i<2)
   content.appendChild(contentText);
   Blogbox.appendChild(content);
   Posts.appendChild(Blogbox);
-  $i++;
+  i++;
 }
 </script>';
 ?>
