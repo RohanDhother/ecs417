@@ -1,5 +1,8 @@
 <?php
-$POST["username"];
+$Title = $POST["title"];
+$Content = $POST["content"];
+$Date = "date";
+$Time = "time";
 $Password = $POST["password"];
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");

@@ -24,6 +24,9 @@
       echo "You are logged";
       // include 'AddPost.html';
     }
+    else {
+      echo "not logged in";
+    }
   }
 }
 $conn->close();
