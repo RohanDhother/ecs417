@@ -22,7 +22,7 @@
     {
       session_start();
       echo "You are logged";
-      include 'AddPost.html';
+      // include 'AddPost.html';
     }
     else {
       // code...
