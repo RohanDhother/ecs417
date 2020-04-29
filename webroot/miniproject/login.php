@@ -25,9 +25,11 @@
         include 'AddPost.html';
       }
       else {
+        include 'index.html';
       }
     }
     else {
+      include 'index.html';
     }
 }
 $conn->close();
