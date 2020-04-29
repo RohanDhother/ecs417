@@ -20,12 +20,12 @@
   else {
     $sql = "SELECT password FROM USERS WHERE username='$Username'";
     $result = $conn->query($sql);
+    echo "<p> $result->num_rows: " . $result->num_rows;
     $result = $result->fetch_assoc();
     $password = $result["password"];
     echo "<p>password: " . $password;
     echo "<p>test";
-    echo "<p> password->num_rows: " . $result->num_rows;
-    if($result->num_rows > 0)
+    if($password)
     {
       echo "<p>test1";
       if ($Password==$password)
