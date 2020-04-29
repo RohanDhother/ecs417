@@ -16,10 +16,15 @@
   else {
   $sql = "SELECT password FROM USER WHERE username=$Username)";
   $password = $conn->query($sql);
-  if ($Password==$password)
+  if($password)
   {
-    session_start();
-    echo "You are logged";
+    if ($Password==$password)
+    {
+      session_start();
+      echo "You are logged";
+    }
   }
 }
+$conn->close();
+include 'AddPost.html';
 ?>
