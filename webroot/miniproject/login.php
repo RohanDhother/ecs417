@@ -24,8 +24,8 @@
     $password = $result["password"];
     echo "<p>password: " . $password;
     echo "<p>test";
-    echo "<p> password->num_rows: " . $password->num_rows;
-    if($password->num_rows > 0)
+    echo "<p> password->num_rows: " . $result->num_rows;
+    if($result->num_rows > 0)
     {
       echo "<p>test1";
       if ($Password==$password)
