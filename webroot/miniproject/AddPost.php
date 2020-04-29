@@ -1,7 +1,7 @@
 <?php
 $Title = $POST["title"];
 $Content = $POST["content"];
-$Date = "date";
+$Date = date("d/m/Y");
 $Time = "time";
 $Password = $POST["password"];
 $dbhost = getenv("MYSQL_SERVICE_HOST");

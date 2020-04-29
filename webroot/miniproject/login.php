@@ -12,12 +12,15 @@
   // Checks connection
   if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
+   echo "test2";
   }
   else {
     $sql = "SELECT password FROM USER WHERE username=$Username)";
     $password = $conn->query($sql);
+    echo "test";
     if($conn->query($sql) == TRUE)
     {
+      echo "test1";
       if ($Password==$password)
       {
         session_start();
@@ -29,7 +32,6 @@
       }
     }
     else {
-      echo $password;
       echo "test4";
     }
 }
