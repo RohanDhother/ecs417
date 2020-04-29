@@ -18,8 +18,7 @@ if ($conn->connect_error) {
 }
 else {
 $sql = "INSERT INTO POSTS (title, content, date_set, time_set) VALUES ('$Title', '$Content','$Date', '$Time')";
-include "main.html";
-include "viewBlog.php";
+include 'index.php';
 }
 $conn->close();
 ?>
