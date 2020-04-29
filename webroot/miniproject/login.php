@@ -28,7 +28,7 @@
     if($password->num_rows > 0)
     {
       echo "<p>test1";
-      if ($Password==$password->fetch_assoc()[0])
+      if ($Password==$password)
       {
         session_start();
         echo "<p>You are logged";
