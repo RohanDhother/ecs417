@@ -27,28 +27,28 @@ if ($conn->connect_error) {
 }
 $conn->close();
 echo '<script type="text/JavaScript">
-$Posts = document.getElementById('Posts');
+var Posts = document.getElementById('Posts');
 $i = 0;
 while($i<2)
 {
-  $Blogbox = document.createElement('div');
-  $Blogbox.className('Blog-box');
-  $dateandtime = document.createElement('div');
-  $dateandtime.className('dateandtime');
-  $dateandtimeText = createTextNode("dateandtime");
-  $dateandtime.appendChild($dateandtimeText);
-  $Blogbox.appendChild($dateandtime);
-  $title = document.createElement('div');
-  $title.className('title');
-  $titleText = document.createTextNode("title");
-  $title.appendChild($titleText);
-  $Blogbox.appendChild($title);
-  $content = document.createElement('div');
-  $content.className('text');
-  $contentText = document.createTextNode("text");
-  $content.appendChild($contentText);
-  $Blogbox.appendChild($content);
-  $Posts.appendChild($Blogbox);
+  var Blogbox = document.createElement('div');
+  Blogbox.className('Blog-box');
+  var dateandtime = document.createElement('div');
+  dateandtime.className('dateandtime');
+  var dateandtimeText = createTextNode("dateandtime");
+  dateandtime.appendChild(dateandtimeText);
+  Blogbox.appendChild(dateandtime);
+  var title = document.createElement('div');
+  title.className('title');
+  var titleText = document.createTextNode("title");
+  title.appendChild(titleText);
+  Blogbox.appendChild(title);
+  var content = document.createElement('div');
+  content.className('text');
+  var contentText = document.createTextNode("text");
+  content.appendChild(contentText);
+  Blogbox.appendChild(content);
+  Posts.appendChild(Blogbox);
   $i++;
 }
 </script>';
