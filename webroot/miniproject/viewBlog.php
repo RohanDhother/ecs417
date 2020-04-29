@@ -22,6 +22,7 @@ if ($conn->connect_error) {
         $Posts[] = $row["date_set"];
         $Posts[] = $row["time_set"];
         $Postlists[] = $Posts;
+        echo "Postlists" . $Postlists;
     }
 }
 }
