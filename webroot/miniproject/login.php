@@ -18,11 +18,11 @@
    echo "<p>test2";
   }
   else {
-    $sql = "SELECT password FROM USER WHERE username=$Username)";
+    $sql = "SELECT password FROM USERS WHERE username=$Username)";
     $password = $conn->query($sql);
     echo "<p>password: " . $password;
     echo "<p>test";
-    echo "<p> password->num_rows: " . $password->num_rows; 
+    echo "<p> password->num_rows: " . $password->num_rows;
     if($password->num_rows)
     {
       echo "<p>test1";
