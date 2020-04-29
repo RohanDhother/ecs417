@@ -1,6 +1,6 @@
 <?php
-  $Username = $POST["username"];
-  $Password = $POST["password"];
+  $Username = $_POST["username"];
+  $Password = $_POST["password"];
   $test = "test";
   $dbhost = getenv("MYSQL_SERVICE_HOST");
   $dbport = getenv("MYSQL_SERVICE_PORT");
@@ -20,7 +20,6 @@
   else {
     $sql = "SELECT password FROM USER WHERE username=$Username)";
     $password = $conn->query($sql);
-    echo "<p>sql: " . $sql;
     echo "<p>password: " . $password;
     echo "<p>test";
     if($conn->query($sql))
