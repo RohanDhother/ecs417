@@ -25,11 +25,13 @@
         include 'AddPost.html';
       }
       else {
-        include 'index.html';
+        include "main.html";
+        include "viewBlog.php";
       }
     }
     else {
-      include 'index.html';
+      include "main.html";
+      include "viewBlog.php";
     }
 }
 $conn->close();
