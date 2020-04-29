@@ -20,13 +20,13 @@
   else {
     $sql = "SELECT password FROM USERS WHERE username='$Username'";
     $password = $conn->query($sql);
-    echo "<p>password: " . $password;
+    echo "<p>password: " . $password->fetch_assoc();
     echo "<p>test";
     echo "<p> password->num_rows: " . $password->num_rows;
     if($password->num_rows)
     {
       echo "<p>test1";
-      if ($Password==$password)
+      if ($Password==$password->fetch_assoc())
       {
         session_start();
         echo "<p>You are logged";
