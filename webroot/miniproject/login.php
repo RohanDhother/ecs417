@@ -15,7 +15,6 @@
   // Checks connection
   if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
-   echo "<p>test2";
   }
   else {
     $sql = "SELECT password FROM USERS WHERE username='$Username'";
@@ -23,23 +22,18 @@
     echo "<p> $result->num_rows: " . $result->num_rows;
     $result = $result->fetch_assoc();
     $password = $result["password"];
-    echo "<p>password: " . $password;
-    echo "<p>test";
     if($password)
     {
-      echo "<p>test1";
       if ($Password==$password)
       {
         session_start();
         echo "<p>You are logged";
-        // include 'AddPost.html';
+        include 'AddPost.html';
       }
       else {
-        echo "<p>test3";
       }
     }
     else {
-      echo "<p>test4";
     }
 }
 $conn->close();
