@@ -22,9 +22,9 @@
     {
       session_start();
       echo "You are logged";
+      include 'AddPost.html';
     }
   }
 }
 $conn->close();
-include 'AddPost.html';
 ?>
