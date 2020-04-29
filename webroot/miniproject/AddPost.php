@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 }
 else {
 $sql = "INSERT INTO Posts (title, content, date_set, time_set) VALUES ('$Title', '$Content','$Date', '$Time')";
-include 'index.php';
 }
 $conn->close();
+return include 'index.php';
 ?>
