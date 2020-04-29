@@ -25,8 +25,11 @@
       // include 'AddPost.html';
     }
     else {
-      echo "not logged in";
+      echo "test3";
     }
+  }
+  else {
+    echo "test4";
   }
 }
 $conn->close();
