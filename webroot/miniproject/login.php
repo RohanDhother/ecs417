@@ -20,6 +20,7 @@
   else {
     $sql = "SELECT password FROM USER WHERE username=$Username)";
     $password = $conn->query($sql);
+    echo "<p>sql: " . $sql;
     echo "<p>password: " . $password;
     echo "<p>test";
     if($conn->query($sql))
