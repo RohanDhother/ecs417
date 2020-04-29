@@ -10,6 +10,8 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 // Checks connection
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
+}
+else {
  $sql = "SELECT title, content, date_set, time_set FROM POSTS";
  $result = $conn->query($sql);
  if ($result->num_rows > 0) {
