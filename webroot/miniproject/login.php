@@ -19,8 +19,10 @@
   }
   else {
     $sql = "SELECT password FROM USERS WHERE username='$Username'";
-    $password = $conn->query($sql);
-    echo "<p>password: " . $password->fetch_assoc()[0];
+    $result = $conn->query($sql);
+    $result = $result->fetch_assoc();
+    $password = $result["password"];
+    echo "<p>password: " . $password;
     echo "<p>test";
     echo "<p> password->num_rows: " . $password->num_rows;
     if($password->num_rows > 0)
