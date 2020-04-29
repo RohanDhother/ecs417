@@ -26,8 +26,7 @@ if ($conn->connect_error) {
 }
 }
 $conn->close();
-?>
-<script type="text/JavaScript">
+echo '<script type="text/JavaScript">
 $Posts = document.getElementById('Posts');
 $i = 0;
 while($i<2)
@@ -52,4 +51,5 @@ while($i<2)
   $Posts.appendChild($Blogbox);
   $i++;
 }
-</script>;
+</script>';
+?>
