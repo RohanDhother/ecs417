@@ -1,6 +1,7 @@
 <?php
   $Username = $POST["username"];
   $Password = $POST["password"];
+  $test = "test";
   $dbhost = getenv("MYSQL_SERVICE_HOST");
   $dbport = getenv("MYSQL_SERVICE_PORT");
   $dbuser = getenv("DATABASE_USER");
@@ -8,6 +9,7 @@
   $dbname = getenv("DATABASE_NAME");
   echo "<p>Username: " . $Username;
   echo "<p>Password: " . $Password;
+  echo "<p>test: " . $test;
   // Creates connection
   $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
   // Checks connection
