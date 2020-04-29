@@ -22,10 +22,31 @@ if ($conn->connect_error) {
         $Posts[] = $row["date_set"];
         $Posts[] = $row["time_set"];
         $Postlists[] = $Posts;
-        echo "Postlists" . $Postlists;
     }
 }
 }
 $conn->close();
-echo "test";
+$Posts = document.getElementById('Posts');
+$i = 0;
+for(i = 0; i<2; i++)
+{
+  $Blogbox = document.createElement('div');
+  $Blogbox.className('Blog-box');
+  $dateandtime = document.createElement('div');
+  $dateandtime.className('dateandtime');
+  $dateandtimeText = createTextNode("dateandtime");
+  $dateandtime.appendChild($dateandtimeText);
+  $Blogbox.appendChild($dateandtime);
+  $title = document.createElement('div');
+  $title.className('title');
+  $titleText = document.createTextNode("title");
+  $title.appendChild($titleText);
+  $Blogbox.appendChild($title);
+  $content = document.createElement('div');
+  $content.className('text');
+  $contentText = document.createTextNode("text");
+  $content.appendChild($contentText);
+  $Blogbox.appendChild($content);
+  $Posts.appendChild($Blogbox);
+}
 ?>
