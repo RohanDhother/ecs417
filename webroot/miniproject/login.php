@@ -15,8 +15,7 @@
   }
   else {
   $sql = "SELECT password FROM USER WHERE username=$Username)";
-  $result = $conn->query($sql);
-  $password = $result->fetch_assoc();
+  $password = $conn->query($sql);
   if ($Password==$password)
   {
     session_start();
