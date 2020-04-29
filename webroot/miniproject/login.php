@@ -21,7 +21,11 @@
     if ($Password==$password)
     {
       session_start();
+      echo "You are logged";
       include 'AddPost.html';
+    }
+    else {
+      // code...
     }
   }
 }
