@@ -3,7 +3,6 @@ $Title = $_POST["title"];
 $Content = $_POST["content"];
 $Date = date("d/m/Y");
 $Time = date("H:i");
-$Password = $POST["password"];
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
 $dbuser = getenv("DATABASE_USER");

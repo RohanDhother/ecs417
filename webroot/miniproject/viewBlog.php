@@ -28,7 +28,9 @@ else {
 }
 }
 $conn->close();
-return $Postlists;
+function getPosts(){
+    return $Postlists;
+}
 //echo '<script src="viewBlog.js"></script>';
 // echo '<script type="text/JavaScript">
 //       let Posts = document.getElementById('Posts');

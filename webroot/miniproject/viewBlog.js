@@ -1,4 +1,4 @@
-let Postlists = include 'viewBlog.php';
+// var Postlists = <?php getPosts();?>;
 let Posts = document.getElementById('Posts');
 let i = 0;
 while(i<2)
@@ -23,3 +23,4 @@ while(i<2)
   Posts.appendChild(Blogbox);
   i++;
 }
+</script>
