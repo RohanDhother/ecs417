@@ -11,6 +11,7 @@
   // Checks connection
   if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
+   $conn->close();
   }
   else {
     $sql = "SELECT password FROM USERS WHERE username='$Username'";
@@ -22,15 +23,17 @@
       if ($Password==$password)
       {
         session_start();
-        include 'AddPost.html';
+        $conn->close();
+        return include 'AddPost.html';
       }
       else {
-        include 'index.php';
+        $conn->close();
+        return include 'index.php';
       }
     }
     else {
-      include 'index.php';
+      $conn->close();
+      return include 'index.php';
     }
 }
-$conn->close();
 ?>
