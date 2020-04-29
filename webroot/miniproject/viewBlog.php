@@ -12,7 +12,7 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 else {
- $sql = "SELECT title, content, date_set, time_set FROM POSTS";
+ $sql = "SELECT title, content, date_set, time_set FROM Posts";
  $result = $conn->query($sql);
  if ($result->num_rows > 0) {
     // output data of each row
