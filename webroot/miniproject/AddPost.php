@@ -1,5 +1,5 @@
 <?php
- = $POST["username"];
+$POST["username"];
 $Password = $POST["password"];
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
@@ -14,5 +14,8 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 else {
-$sql = "SELECT password FROM USER WHERE username=$Username)";
+$sql = "INSERT INTO POSTS (title, content, date_set, time_set) VALUES ('$Title', '$Content','$Date', '$Time')";
+include 'index.php';
+}
+$conn->close();
 ?>
