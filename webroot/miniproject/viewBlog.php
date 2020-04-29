@@ -27,8 +27,8 @@ if ($conn->connect_error) {
 }
 $conn->close();
 $Posts = document.getElementById('Posts');
-$i;
-for($i = 0; $i<2; $i++)
+$i = 0;
+while($i<2)
 {
   $Blogbox = document.createElement('div');
   $Blogbox.className('Blog-box');
@@ -48,5 +48,6 @@ for($i = 0; $i<2; $i++)
   $content.appendChild($contentText);
   $Blogbox.appendChild($content);
   $Posts.appendChild($Blogbox);
+  $i++;
 }
 ?>
