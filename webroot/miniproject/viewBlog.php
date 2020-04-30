@@ -26,9 +26,6 @@ else {
     }
 }
 }
-<script>
-  var postlists = <?php echo json_encode($postlists); ?>;
-</script>
 $conn->close();
 echo '<script>var postlists = ' . json_encode($Postlists) . ';</script>';
 echo '<script type="text/JavaScript">',
