@@ -1,6 +1,6 @@
 function LoadBlog()
 {
-  var postlists = "<?php echo $Postlists; ?>";
+  var postlists = <?php echo '["' . implode('", "', $Postlists) . '"]' ?>;
   var posts = document.getElementById('Posts');
         var i = 0;
         while(i<postlists.length)
