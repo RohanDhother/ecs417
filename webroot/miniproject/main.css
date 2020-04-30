@@ -180,12 +180,12 @@ hr {width: 100%;
     width: 50%;
     margin: auto;
     background-color: inherit;
-    color: white;}
+    color: white;
+    border-bottom: 2vw solid white;}
     .Blog-box {
                 padding: 1vw;
                 width: 50%;
                 margin: auto;
-                border-bottom: 2vw solid white;
                 background-color: inherit;
                 color: white;}
     .dateandtime {float: right;

@@ -28,37 +28,9 @@ else {
 }
 }
 $conn->close();
-// echo "test";
-// echo '<script src="viewBlog.js"></script>';
-// echo "test2";
 echo '<script type="text/JavaScript">',
       'var postlists = "<?php echo $Postlists?>";',
       'LoadBlog(postlists);',
       '</script>'
       ;
-      // var posts = document.getElementById('Posts');
-      // var i = 0;
-      // while(i<2)
-      // {
-      //   let blogbox = document.createElement('div');
-      //   blogbox.className = 'Blog-box';
-      //   let dateandtime = document.createElement('div');
-      //   dateandtime.className = 'dateandtime';
-      //   let dateandtimeText = document.createTextNode("dateandtime");
-      //   dateandtime.appendChild(dateandtimeText);
-      //   blogbox.appendChild(dateandtime);
-      //   let title = document.createElement('div');
-      //   title.className = 'title';
-      //   let titleText = document.createTextNode("title");
-      //   title.appendChild(titleText);
-      //   blogbox.appendChild(title);
-      //   let content = document.createElement('div');
-      //   content.className = 'text';
-      //   let contentText = document.createTextNode("text");
-      //   content.appendChild(contentText);
-      //   blogbox.appendChild(content);
-      //   posts.appendChild(blogbox);
-      //   i++;
-      // }
-      // </script>";
 ?>
