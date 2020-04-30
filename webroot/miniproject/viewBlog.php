@@ -32,7 +32,7 @@ $conn->close();
 // echo '<script src="viewBlog.js"></script>';
 // echo "test2";
 echo '<script type="text/JavaScript">',
-      'var postlists = $Postlists;',
+      'var postlists = "<?php echo $Postlists?>";',
       'LoadBlog(postlists);',
       '</script>'
       ;
