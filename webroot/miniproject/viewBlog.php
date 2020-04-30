@@ -28,9 +28,6 @@ else {
 }
 }
 $conn->close();
-function getPosts(){
-    return $Postlists;
-}
 // echo "test";
 // echo '<script src="viewBlog.js"></script>';
 // echo "test2";
