@@ -27,5 +27,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
   $conn->close();
 }
-// return include 'index.php';
+return include 'index.php';
 ?>
