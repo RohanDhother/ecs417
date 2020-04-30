@@ -1,5 +1,10 @@
-function LoadBlog(postlists)
+function getPostlists()
 {
+  return <?php echo json_encode($Postlists); ?>;
+}
+function LoadBlog()
+{
+  var postlists = getPostlists();
   var posts = document.getElementById('Posts');
         var i = 0;
         while(i<postlists.length)
