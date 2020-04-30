@@ -34,7 +34,11 @@ function getPosts(){
 // echo "test";
 // echo '<script src="viewBlog.js"></script>';
 // echo "test2";
-echo "<script type="text/JavaScript">", "var postlists = $Postlists;", "LoadBlog(postlists);</script>";
+echo '<script type="text/JavaScript">',
+      'var postlists = $Postlists;',
+      'LoadBlog(postlists);',
+      '</script>'
+      ;
       // var posts = document.getElementById('Posts');
       // var i = 0;
       // while(i<2)
