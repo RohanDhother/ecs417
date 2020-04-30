@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   else {
 
     $sql = "INSERT INTO Posts (title, content, date_set, time_set) VALUES ('$Title', '$Content','$Date', '$Time')";
+    echo "test";
   }
   $conn->close();
 }
