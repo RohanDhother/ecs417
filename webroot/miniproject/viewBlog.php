@@ -27,9 +27,8 @@ else {
 }
 }
 $conn->close();
-var postlists = <?php echo $Postlists?>;
 echo '<script type="text/JavaScript">',
-      'LoadBlog(postlists);',
+      'LoadBlog();',
       '</script>'
       ;
 ?>
