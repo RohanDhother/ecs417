@@ -34,6 +34,7 @@ function getPosts(){
 // echo "test";
 // echo '<script src="viewBlog.js"></script>';
 // echo "test2";
+?>
 <script type="text/JavaScript">
       var posts = document.getElementById('Posts');
       var i = 0;
@@ -60,4 +61,3 @@ function getPosts(){
         i++;
       }
       </script>;
-?>
