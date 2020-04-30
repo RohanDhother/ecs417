@@ -21,6 +21,8 @@ function LoadBlog(Postlists)
           let contentText = document.createTextNode("text");
           content.appendChild(contentText);
           blogbox.appendChild(content);
+          let hr = document.createElement('hr');
+          blogbox.appendChild(hr);
           posts.appendChild(blogbox);
           i++;
         }
