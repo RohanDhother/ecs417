@@ -18,7 +18,6 @@ else {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         $Posts = array();
-        $Posts[] = $row["id"];
         $Posts[] = $row["title"];
         $Posts[] = $row["content"];
         $Posts[] = $row["date_set"];
