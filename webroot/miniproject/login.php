@@ -1,4 +1,5 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Username = $_POST["username"];
   $Password = $_POST["password"];
   $dbhost = getenv("MYSQL_SERVICE_HOST");
@@ -36,5 +37,6 @@
       $conn->close();
       return include 'index.php';
     }
+}
 }
 ?>
