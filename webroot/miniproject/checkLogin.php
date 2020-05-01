@@ -9,5 +9,4 @@
         'loginpage(sessionStart);',
         '</script>'
         ;
-
 ?>

@@ -1,6 +1,5 @@
 function loginpage(sessionStart)
 {
-
   var login = document.getElementById('login');
   if (sessionStart)
   {
@@ -40,5 +39,12 @@ function loginpage(sessionStart)
     input3.setAttribute("type", "submit");
     input3.setAttribute("value", "Login");
     div3.appendChild(input3);
+  }
+  else {
+    {
+      var login = document.getElementById('login');
+      let loginText = document.createTextNode("You are logged in");
+      login.appendChild(loginText);
+    }
   }
 }
