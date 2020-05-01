@@ -1,8 +1,11 @@
 <?php
 // remove all session variables
-session_unset();
+try{
+  session_unset();
 
-// destroy the session
-session_destroy();
-return include "index.php";
+  // destroy the session
+  session_destroy();
+  return include "index.php";
+}
+catch (Exception $e){}
  ?>
