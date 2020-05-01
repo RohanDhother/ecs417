@@ -3,7 +3,7 @@
   echo "sessionStart: " . session_status();
   if (session_status() == PHP_SESSION_NONE)
   {
-    $sessionStart = true;
+    $sessionStart = false;
   }
   echo '<script>var sessionStart = ' . json_encode($sessionStart) . ';</script>';
   echo '<script type="text/JavaScript">',
