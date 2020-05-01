@@ -45,6 +45,8 @@ function loginpage(sessionStart)
       var login = document.getElementById('login');
       let loginText = document.createTextNode("You are logged in");
       login.appendChild(loginText);
+      var addpostButton = document.getElementById('addpostButton');
+      addpostButton.setAttribute("href", "#login");
     }
   }
 }

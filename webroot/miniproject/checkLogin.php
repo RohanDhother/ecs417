@@ -1,7 +1,7 @@
 <?php
   $sessionStart = true;
   echo "sessionStart: " . session_status();
-  if (session_status() > 1)
+  if (session_status() == PHP_SESSION_NONE)
   {
     $sessionStart = false;
   }
