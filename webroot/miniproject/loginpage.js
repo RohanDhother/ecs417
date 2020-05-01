@@ -45,6 +45,18 @@ function loginpage(sessionStart)
       var login = document.getElementById('login');
       let loginText = document.createTextNode("You are logged in");
       login.appendChild(loginText);
+      let form = document.createElement('form');
+      form.setAttribute("action", "logout.php");
+      form.setAttribute("method", "post");
+      form.setAttribute("id", "logout");
+      login.appendChild(form);
+      let div = document.createElement('div');
+      form.appendChild(div);
+      let input = document.createElement('input');
+      input.setAttribute("id", "logout-submit");
+      input.setAttribute("type", "submit");
+      input.setAttribute("value", "Logout");
+      div.appendChild(input);
       var addpostButton = document.getElementById('addpostButton');
       addpostButton.setAttribute("href", "");
     }
