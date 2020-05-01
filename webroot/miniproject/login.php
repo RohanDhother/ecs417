@@ -23,6 +23,7 @@
       if ($Password==$password)
       {
         session_start();
+        $_SESSION["username"] = $Username;
         $conn->close();
         return include 'AddPost.html';
       }
