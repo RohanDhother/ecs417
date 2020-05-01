@@ -39,6 +39,8 @@ function loginpage(sessionStart)
     input3.setAttribute("type", "submit");
     input3.setAttribute("value", "Login");
     div3.appendChild(input3);
+    var addpostButton = document.getElementById('addpostButton');
+    addpostButton.setAttribute("href", "");
   }
   else {
     {
@@ -57,8 +59,6 @@ function loginpage(sessionStart)
       input.setAttribute("type", "submit");
       input.setAttribute("value", "Logout");
       div.appendChild(input);
-      var addpostButton = document.getElementById('addpostButton');
-      addpostButton.setAttribute("href", "");
     }
   }
 }
