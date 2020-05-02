@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
-  $DateandTime = date('Y-m-d H:i');
+  // $DateandTime = date('Y-m-d H:i');
   // $Date = strval($Date);
   // $Time = date("H:i");
   // $Time = strval($Time);
@@ -26,7 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, SELECT GETUTCDATE();)";
+    $sql = "SELECT GETUTCDATE();";
+    $result = $conn->query($sql);
+    $result = $result->fetch_assoc();
+    echo "result: " . $result;
+    $DateandTime = $result;
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
