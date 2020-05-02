@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, NOW())";
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, SELECT GETUTCDATE();)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
