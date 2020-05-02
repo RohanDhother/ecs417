@@ -26,11 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "SELECT GETUTCDATE()";
+    $sql = "SELECT GETUTCDATE();";
     $result = $conn->query($sql);
-    // $result = $result->fetch_assoc();
-    echo "result: " . $result[0];
-    $DateandTime = $result[0];
+    $result = $result->fetch_assoc();
+    $DateandTime = $result["GETUTCDATE()"];
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
