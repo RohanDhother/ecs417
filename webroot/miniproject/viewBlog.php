@@ -20,8 +20,7 @@ else {
         $Posts = array();
         $Posts[] = $row["title"];
         $Posts[] = $row["content"];
-        $Posts[] = $row["date_set"];
-        $Posts[] = $row["time_set"];
+        $Posts[] = $row["dateandtime"];
         $Postlists[] = $Posts;
     }
 }

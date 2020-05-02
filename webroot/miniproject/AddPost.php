@@ -3,7 +3,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
   $Date = date("d/m/Y");
+  $Date = strval($Date);
   $Time = date("H:i");
+  $Time = strval($Time);
+  $DateandTime = convert(datetime, $Date . " " . $Time,5);
   echo "<p>title: " . $Title;
   echo "<p>content: " . $Content;
   echo "<p>date: " . $Date;
@@ -23,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "INSERT INTO Posts (title, content, date_set, time_set)VALUES ($Title, $Content, $Date, $Time)";
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }

@@ -7,13 +7,12 @@ function LoadBlog(postlists)
           let post = postlists[i];
           let titleContent = post[0];
           let contentContent = post[1];
-          let dateContent = post[2];
-          let timeContent = post[3];
+          let dateandtimeContent = post[2];
           let blogbox = document.createElement('div');
           blogbox.className = 'Blog-box';
           let dateandtime = document.createElement('div');
           dateandtime.className = 'dateandtime';
-          let dateandtimeText = document.createTextNode(dateContent + " " + timeContent);
+          let dateandtimeText = document.createTextNode(dateandtimeContent);
           dateandtime.appendChild(dateandtimeText);
           blogbox.appendChild(dateandtime);
           let title = document.createElement('div');
