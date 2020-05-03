@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
   else {
     echo "<p>test";
-    $Title = strval($Title);
-    $Content = strval($Content);
+    // $Title = strval($Title);
+    // $Content = strval($Content);
     // $sql = "SELECT CURRENT_TIMESTAMP;";
     // $result = $conn->query($sql);
     // $result = $result->fetch_assoc();
@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     // $DateandTime = strval($DateandTime);
     // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
     // $DateandTime->getTimestamp();
+    $sql = "INSERT INTO USERS (firstName, lastName, email, password) VALUES ('$fname', '$sname', '$email', '$pass1')";
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ('$Title', '$Content', '$DateandTime');";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
