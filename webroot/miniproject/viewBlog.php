@@ -13,7 +13,7 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 else {
- $sql = "SELECT title, content, dateandtime FROM Posts";
+ $sql = "SELECT title, content, dateandtime FROM Posts ORDER BY dateandtime DESC ";
  $result = $conn->query($sql);
  if ($result->num_rows > 0) {
     // output data of each row
@@ -21,7 +21,7 @@ else {
         $Posts = array();
         $Posts[] = $row["title"];
         $Posts[] = $row["content"];
-        $Posts[] = strval($row["dateandtime"]);
+        $Posts[] = $row["dateandtime"];
         $Postlists[] = $Posts;
     }
 }

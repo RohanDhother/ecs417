@@ -2,10 +2,6 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
-  echo "<p>title: " . $Title;
-  echo "<p>content: " . $Content;
-  echo "<p>date: " . $Date;
-  echo "<p>time: " . $Time;
   $dbhost = getenv("MYSQL_SERVICE_HOST");
   $dbport = getenv("MYSQL_SERVICE_PORT");
   $dbuser = getenv("DATABASE_USER");
