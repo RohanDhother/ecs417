@@ -1,5 +1,5 @@
   var login = document.getElementById('login');
-  if (myvar="")
+  if (!myvar)
   {
     var login = document.getElementById('login');
     let section = document.createElement('section');
