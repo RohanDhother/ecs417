@@ -29,13 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $sql = "SELECT CURRENT_TIMESTAMP;";
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
-    echo "<p>result: " . $result;
-    for($i = 0;$i<count($result);$i++)
-    {
-      echo "<p> result " . $i . ": " . $result[$i];
-    }
-    $DateandTime = $result;
-    echo "<p>dateandtime: " . $DateandTime;
+    echo "result: " . $result;
+    $DateandTime = $result["CURRENT_TIMESTAMP"];
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
