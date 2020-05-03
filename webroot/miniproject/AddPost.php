@@ -16,7 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   else {
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ('$Title', '$Content', CURRENT_TIMESTAMP);";
     if ($conn->query($sql) === TRUE) {
-          return include 'index.php';
+          // return include 'index.php';
+          header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
  }
   }
   $conn->close();

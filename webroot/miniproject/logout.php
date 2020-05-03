@@ -6,7 +6,8 @@ try{
   //
   // // destroy the session
   session_destroy();
-  include "index.php";
+  header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+  // include "index.php";
 }
 catch (Exception $e){}
  ?>

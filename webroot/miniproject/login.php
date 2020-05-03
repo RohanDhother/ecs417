@@ -27,16 +27,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         session_start();
         $_SESSION["username"] = $Username;
         $conn->close();
-        return include 'AddPost.html';
+        // return include 'AddPost.html';
+        header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/AddPost.html');
       }
       else {
         $conn->close();
-        return include 'index.php';
+        // return include 'index.php';
+        header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       }
     }
     else {
       $conn->close();
-      return include 'index.php';
+      // return include 'index.php';
+      header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
     }
 }
 }
