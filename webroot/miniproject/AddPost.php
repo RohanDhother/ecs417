@@ -29,7 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $Content = strval($Content);
     $sql = "SELECT GETUTCDATE();";
     $result = $conn->query($sql);
-    $DateandTime = $result;
+    $result = sql_fetch_row($result);
+    $DateandTime = $result[0];
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
