@@ -1,11 +1,14 @@
 body {width: 30%;
       margin: auto;
-      padding-top: 1vw;}
+      padding-top: 1vw;
+      background-image: url("background21.jpg");
+      background-size: contain;}
 h1 { color: white;
   font-size: 2vw;
   padding-bottom: 1vw;
   text-align: center;}
-#addpost-box {background-color: black;
+#addpost-box {color: white;
+        background-color: rgba(0, 0, 0, 0.5);
 padding: 1vw 2vw;
 overflow:auto;
 border-radius: 4px;

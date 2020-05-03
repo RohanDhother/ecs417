@@ -21,7 +21,7 @@ else {
         $Posts = array();
         $Posts[] = $row["title"];
         $Posts[] = $row["content"];
-        $Posts[] = date("S F Y, G:i ", strtotime($row["dateandtime"])) . "UTC";
+        $Posts[] = date("jS F Y, G:i ", strtotime($row["dateandtime"])) . "UTC";
         $Postlists[] = $Posts;
     }
 }
