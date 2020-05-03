@@ -30,6 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
     echo "<p>result: " . $result;
+    for($i = 0;$i<count($result);$i++)
+    {
+      echo "<p> result " . $i . ": " . $result[$i];
+    }
     $DateandTime = $result["Cast"];
     echo "<p>dateandtime: " . $DateandTime;
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
