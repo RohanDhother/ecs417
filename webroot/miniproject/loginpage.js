@@ -50,6 +50,8 @@
       form.setAttribute("method", "post");
       form.setAttribute("id", "logout");
       login.appendChild(form);
+      let br = document.createElement('br');
+      form.appendChild(br);
       let div = document.createElement('div');
       form.appendChild(div);
       let input = document.createElement('input');
