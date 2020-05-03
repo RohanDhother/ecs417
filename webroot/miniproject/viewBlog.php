@@ -21,7 +21,7 @@ else {
         $Posts = array();
         $Posts[] = $row["title"];
         $Posts[] = $row["content"];
-        $Posts[] = $row["dateandtime"];
+        $Posts[] = strval($row["dateandtime"]);
         $Postlists[] = $Posts;
     }
 }
