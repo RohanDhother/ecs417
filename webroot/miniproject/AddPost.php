@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "SELECT Cast(CURRENT_TIMESTAMP AS datetime);";
+    $sql = "SELECT CURRENT_TIMESTAMP;";
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
     echo "<p>result: " . $result;
