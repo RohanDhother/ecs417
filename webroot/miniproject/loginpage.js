@@ -1,7 +1,7 @@
-function loginpage(username)
+function loginpage(sessionStart)
 {
   var login = document.getElementById('login');
-  if (username=="")
+  if (sessionStart)
   {
     var login = document.getElementById('login');
     let section = document.createElement('section');
@@ -45,7 +45,7 @@ function loginpage(username)
   else {
     {
       var login = document.getElementById('login');
-      let loginText = document.createTextNode("You are logged in" + username);
+      let loginText = document.createTextNode("You are logged in");
       login.appendChild(loginText);
       let form = document.createElement('form');
       form.setAttribute("action", "logout.php");
