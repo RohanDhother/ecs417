@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
-  $DateandTime = date('Y-m-d H:i');
+  $DateandTime = date('Y-m-d H:i:s');
   // $Date = strval($Date);
   // $Time = date("H:i");
   // $Time = strval($Time);
