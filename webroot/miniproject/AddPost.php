@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     // $DateandTime = strval($DateandTime);
     // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
     // $DateandTime->getTimestamp();
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, SELECT Cast(CURRENT_TIMESTAMP As datetime);)";
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, CURRENT_TIMESTAMP)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
