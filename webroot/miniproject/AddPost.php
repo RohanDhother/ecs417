@@ -26,15 +26,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "SELECT CURRENT_TIMESTAMP;";
-    $result = $conn->query($sql);
-    $result = $result->fetch_assoc();
-    echo "result: " . $result;
-    $DateandTime = $result["CURRENT_TIMESTAMP"];
-    $DateandTime = strval($DateandTime);
-    $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
-    $DateandTime->getTimestamp();
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
+    // $sql = "SELECT CURRENT_TIMESTAMP;";
+    // $result = $conn->query($sql);
+    // $result = $result->fetch_assoc();
+    // echo "result: " . $result;
+    // $DateandTime = $result["CURRENT_TIMESTAMP"];
+    // $DateandTime = strval($DateandTime);
+    // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
+    // $DateandTime->getTimestamp();
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, SELECT CURRENT_TIMESTAMP As datetime;)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
