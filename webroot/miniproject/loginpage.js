@@ -1,7 +1,7 @@
-function loginpage(sessionStart, username)
+function loginpage(username)
 {
   var login = document.getElementById('login');
-  if (sessionStart && username=="")
+  if (username=="")
   {
     var login = document.getElementById('login');
     let section = document.createElement('section');
