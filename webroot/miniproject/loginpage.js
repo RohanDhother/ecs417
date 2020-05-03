@@ -43,7 +43,7 @@
   else
     {
       var login = document.getElementById('login');
-      let loginText = document.createTextNode("You are logged in" + myvar);
+      let loginText = document.createTextNode("You are logged in " + myvar);
       login.appendChild(loginText);
       let form = document.createElement('form');
       form.setAttribute("action", "logout.php");
