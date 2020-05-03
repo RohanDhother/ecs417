@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
-  // $DateandTime = date('Y-m-d H:i');
+  $DateandTime = date('Y-m-d H:i');
   // $Date = strval($Date);
   // $Time = date("H:i");
   // $Time = strval($Time);
@@ -26,11 +26,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "SELECT CURRENT_TIMESTAMP;";
-    $result = $conn->query($sql);
-    $result = $result->fetch_assoc();
-    echo "result: " . $result;
-    $DateandTime = $result["CURRENT_TIMESTAMP"];
+    // $sql = "SELECT CURRENT_TIMESTAMP;";
+    // $result = $conn->query($sql);
+    // $result = $result->fetch_assoc();
+    // echo "result: " . $result;
+    // $DateandTime = $result["CURRENT_TIMESTAMP"];
     // $DateandTime = strval($DateandTime);
     // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
     // $DateandTime->getTimestamp();
