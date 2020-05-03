@@ -30,13 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
     echo "<p>result: " . $result;
-    $result_array = array();
     for($i = 0;$i<count($result);$i++)
     {
       echo "<p> result " . $i . ": " . $result[$i];
-      $result_array[] = $result[$i];
     }
-    $DateandTime = $result_array[0];
+    $DateandTime = $result;
     echo "<p>dateandtime: " . $DateandTime;
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
