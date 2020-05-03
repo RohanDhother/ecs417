@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $Title = $_POST["title"];
   $Content = $_POST["content"];
-  $DateandTime = date('Y-m-d H:i:s');
+  $DateandTime = date('Y-m-d H:i');
   // $Date = strval($Date);
   // $Time = date("H:i");
   // $Time = strval($Time);
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     // $DateandTime = strval($DateandTime);
     // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
     // $DateandTime->getTimestamp();
-    $sql = "INSERT INTO POSTS (title, content)VALUES ('$Title', '$Content')";
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime);";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
