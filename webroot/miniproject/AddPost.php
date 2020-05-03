@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     die("Connection failed: " . $conn->connect_error);
   }
   else {
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ('$Title', '$Content', GETUTCDATE());";
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ('$Title', '$Content', CURRENT_TIMESTAMP);";
     if ($conn->query($sql) === TRUE) {
           return include 'index.php';
  }
