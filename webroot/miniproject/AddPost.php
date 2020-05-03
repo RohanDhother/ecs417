@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
   else {
     echo "<p>test";
-    // $Title = strval($Title);
-    // $Content = strval($Content);
+    $Title = strval($Title);
+    $Content = strval($Content);
     // $sql = "SELECT CURRENT_TIMESTAMP;";
     // $result = $conn->query($sql);
     // $result = $result->fetch_assoc();
