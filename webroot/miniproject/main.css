@@ -212,7 +212,9 @@ hr {width: 100%;
     /*Right*/
     .right {float:left;
             width:auto;
-            height: auto;}
+            height: auto;
+            font-size: 1vw;
+            color: white;}
     #login-box {
     padding: 1vw 2vw;
     overflow:auto;
