@@ -1,5 +1,9 @@
+<?php $session_value=(isset($_SESSION['username']))?$_SESSION['username']:''; ?>
 <html>
   <head>
+    <script type="text/javascript">
+    var myvar='<?php echo $session_value;?>';
+    </script>
     <script src="viewBlog.js"></script>
     <script src="loginpage.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

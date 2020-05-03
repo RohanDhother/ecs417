@@ -1,7 +1,5 @@
-function loginpage(sessionStart)
-{
   var login = document.getElementById('login');
-  if (sessionStart)
+  if (myvar="")
   {
     var login = document.getElementById('login');
     let section = document.createElement('section');
@@ -42,10 +40,10 @@ function loginpage(sessionStart)
     var addpostButton = document.getElementById('addpostButton');
     addpostButton.setAttribute("href", "");
   }
-  else {
+  else
     {
       var login = document.getElementById('login');
-      let loginText = document.createTextNode("You are logged in");
+      let loginText = document.createTextNode("You are logged in" + myvar);
       login.appendChild(loginText);
       let form = document.createElement('form');
       form.setAttribute("action", "logout.php");
@@ -60,5 +58,3 @@ function loginpage(sessionStart)
       input.setAttribute("value", "Logout");
       div.appendChild(input);
     }
-  }
-}
