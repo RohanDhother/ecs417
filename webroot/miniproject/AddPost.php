@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
     echo "<p>result: " . $result;
-    $DateandTime = $result["CURRENT_TIMESTAMP"];
+    $DateandTime = $result[0];
     echo "<p>dateandtime: " . $DateandTime;
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
