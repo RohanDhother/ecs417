@@ -29,9 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $sql = "SELECT Cast(CURRENT_TIMESTAMP AS datetime);";
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
-    echo "result: " . $result;
-    $DateandTime = $result["datetime"];
-    echo "dateandtime: " . $DateandTime;
+    echo "<p>result: " . $result;
+    $DateandTime = $result["CURRENT_TIMESTAMP"];
+    echo "<p>dateandtime: " . $DateandTime;
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
