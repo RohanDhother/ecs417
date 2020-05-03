@@ -194,6 +194,10 @@ hr {width: 100%;
     .title {font-weight: bold;
             font-size: 1vw;}
     .text {font-size: 1vw;}
+    #addpostButton {font-size: 1vw;
+      padding: 1vw;
+                      border-radius: 4px;
+                    background-color: inherit;}
     #Blog-bottom {padding: 1vw;
     width: 50%;
     margin: auto;
@@ -225,6 +229,9 @@ hr {width: 100%;
       padding: 1vw;
                       border-radius: 2px;}
     #login-submit {width: 100%;}
+    #logout-submit {font-size: 1vw;
+      padding: 1vw;
+                      border-radius: 4px;}
     /*Bottom*/
       footer {height:auto;}
       .main {float:left;
