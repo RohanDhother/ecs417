@@ -38,7 +38,7 @@
     input3.setAttribute("value", "Login");
     div3.appendChild(input3);
     var addpostButton = document.getElementById('addpostButton');
-    addpostButton.setAttribute("href", "");
+    addpostButton.setAttribute("href", "#login");
   }
   else
     {

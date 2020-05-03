@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo "<p>test";
     $Title = strval($Title);
     $Content = strval($Content);
-    $sql = "SELECT GETUTCDATE();";
-    $result = $conn->query($sql);
-    $result = sql_fetch_row($result);
-    $DateandTime = $result[0];
-    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
+    // $sql = "SELECT GETUTCDATE();";
+    // $result = $conn->query($sql);
+    // $result = sql_fetch_row($result);
+    // $DateandTime = $result[0];
+    $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, CURRENT_TIMESTAMP)";
     echo "<p>sql: " . $sql;
     echo "<p>test2";
   }
