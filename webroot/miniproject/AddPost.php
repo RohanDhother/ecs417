@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       echo "<p> result " . $i . ": " . $result[$i];
       $result_array[] = $result[$i];
     }
-    $DateandTime = $result_array[];
+    $DateandTime = $result_array[0];
     echo "<p>dateandtime: " . $DateandTime;
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ($Title, $Content, $DateandTime)";
     echo "<p>sql: " . $sql;
