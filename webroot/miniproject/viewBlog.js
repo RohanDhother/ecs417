@@ -12,7 +12,7 @@ function LoadBlog(postlists)
           blogbox.className = 'Blog-box';
           let dateandtime = document.createElement('div');
           dateandtime.className = 'dateandtime';
-          let dateandtimeText = document.createTextNode(dateandtimeContent);
+          let dateandtimeText = document.createTextNode(dateandtimeContent.toString());
           dateandtime.appendChild(dateandtimeText);
           blogbox.appendChild(dateandtime);
           let title = document.createElement('div');
