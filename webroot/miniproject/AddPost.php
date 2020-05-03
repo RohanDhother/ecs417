@@ -34,10 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     // $DateandTime = strval($DateandTime);
     // $DateandTime = date_create_from_format('d/m/Y:H:i:s', $DateandTime);
     // $DateandTime->getTimestamp();
-    $sql = "INSERT INTO USERS (firstName, lastName, email, password) VALUES ('$fname', '$sname', '$email', '$pass1')";
     $sql = "INSERT INTO POSTS (title, content, dateandtime)VALUES ('$Title', '$Content', '$DateandTime');";
     echo "<p>sql: " . $sql;
-    echo "<p>test2";
+    if ($conn->query($sql) === TRUE) {
+          echo "<p>test2";
+ }
   }
   $conn->close();
 }
