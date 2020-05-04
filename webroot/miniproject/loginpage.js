@@ -70,15 +70,15 @@ function validatelogin()
   if(username=='' && password=='')
   {
     alert("Please enter all field");
-    document.getElementById('username').style.backgroundColor ="red";
-    document.getElementById('password').style.backgroundColor ="red";
-    document.getElementById('username').style.color ="white";
-    document.getElementById('password').style.color ="white";
+    document.getElementById('inputUsername3').style.backgroundColor ="red";
+    document.getElementById('inputPassword3').style.backgroundColor ="red";
+    document.getElementById('inputUsername3').style.color ="white";
+    document.getElementById('inputPassword3').style.color ="white";
     setTimeout(function(){
-      document.getElementById('username').style.backgroundColor = "white";
-      document.getElementById('password').style.backgroundColor = "white";
-      document.getElementById('username').style.color ="black";
-      document.getElementById('password').style.color ="black";
+      document.getElementById('inputUsername3').style.backgroundColor = "white";
+      document.getElementById('inputPassword3').style.backgroundColor = "white";
+      document.getElementById('inputUsername3').style.color ="black";
+      document.getElementById('inputPassword3').style.color ="black";
   }, 3000)
     return false;
   }
@@ -100,20 +100,20 @@ function validatelogin()
 function NotUsername()
 {
 alert("Please enter the username field");
-document.getElementById('username').style.backgroundColor ="red";
-document.getElementById('username').style.color ="white";
+document.getElementById('inputUsername3').style.backgroundColor ="red";
+document.getElementById('inputUsername3').style.color ="white";
 setTimeout(function(){
-  document.getElementById('username').style.backgroundColor = "white";
-  document.getElementById('username').style.color ="black";
+  document.getElementById('inputUsername3').style.backgroundColor = "white";
+  document.getElementById('inputUsername3').style.color ="black";
 }, 3000)
 }
 function NotPassword()
 {
 alert("Please enter the password field");
-document.getElementById('password').style.backgroundColor ="red";
-document.getElementById('password').style.color ="white";
+document.getElementById('inputPassword3').style.backgroundColor ="red";
+document.getElementById('inputPassword3').style.color ="white";
 setTimeout(function(){
-  document.getElementById('password').style.backgroundColor = "white";
-  document.getElementById('password').style.color ="black";
+  document.getElementById('inputPassword3').style.backgroundColor = "white";
+  document.getElementById('inputPassword3').style.color ="black";
 }, 3000)
 }
