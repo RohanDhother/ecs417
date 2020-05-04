@@ -1,11 +1,11 @@
-function NotUsername()
+function NotEmail()
 {
 alert("Please enter the username field");
-document.getElementById('inputUsername3').style.backgroundColor ="red";
-document.getElementById('inputUsername3').style.color ="white";
+document.getElementById('inputEmail3').style.backgroundColor ="red";
+document.getElementById('inputEmail3').style.color ="white";
 setTimeout(function(){
-  document.getElementById('inputUsername3').style.backgroundColor = "white";
-  document.getElementById('inputUsername3').style.color ="black";
+  document.getElementById('inputEmail3').style.backgroundColor = "white";
+  document.getElementById('inputEmail3').style.color ="black";
 }, 3000)
 }
 function NotPassword()

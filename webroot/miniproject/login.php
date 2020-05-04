@@ -1,7 +1,7 @@
 <?php
   session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-  $Username = $_POST["username"];
+  $Email = $_POST["email"];
   $Password = $_POST["password"];
   $dbhost = getenv("MYSQL_SERVICE_HOST");
   $dbport = getenv("MYSQL_SERVICE_PORT");
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
    $conn->close();
   }
   else {
-    $sql = "SELECT password FROM USERS WHERE username='$Username'";
+    $sql = "SELECT password FROM USERS WHERE email='$Email'";
     $result = $conn->query($sql);
     $result = $result->fetch_assoc();
     $password = $result["password"];
@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       if ($Password==$password)
       {
         session_start();
-        $_SESSION["username"] = $Username;
+        $_SESSION["email"] = $Email;
         $conn->close();
         // return include 'AddPost.html';
         header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/AddPost.html');
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       // return include 'index.php';
       header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       echo '<script src="checkLogin.js" type="text/JavaScript">',
-            'NotUsername();',
+            'NotEmail();',
             '</script>'
             ;
       // header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');

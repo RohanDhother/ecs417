@@ -17,9 +17,9 @@ if (!myvar)
   let input1 = document.createElement('input');
   input1.setAttribute("type", "text");
   input1.setAttribute("class", "form-control");
-  input1.setAttribute("id", "inputUsername3");
-  input1.setAttribute("placeholder", "Username");
-  input1.setAttribute("name", "username");
+  input1.setAttribute("id", "inputEmail3");
+  input1.setAttribute("placeholder", "Email");
+  input1.setAttribute("name", "email");
   div1.appendChild(input1);
   let div2 = document.createElement('div');
   form.appendChild(div2);
@@ -65,19 +65,19 @@ else
   }
 function validatelogin()
 {
-  var username = document.forms["loginpage"]["username"].value;
+  var username = document.forms["loginpage"]["email"].value;
   var password = document.forms["loginpage"]["password"].value;
   if(username=='' && password=='')
   {
     alert("Please enter all field");
-    document.getElementById('inputUsername3').style.backgroundColor ="red";
+    document.getElementById('inputEmail3').style.backgroundColor ="red";
     document.getElementById('inputPassword3').style.backgroundColor ="red";
-    document.getElementById('inputUsername3').style.color ="white";
+    document.getElementById('inputEmail3').style.color ="white";
     document.getElementById('inputPassword3').style.color ="white";
     setTimeout(function(){
-      document.getElementById('inputUsername3').style.backgroundColor = "white";
+      document.getElementById('inputEmail3').style.backgroundColor = "white";
       document.getElementById('inputPassword3').style.backgroundColor = "white";
-      document.getElementById('inputUsername3').style.color ="black";
+      document.getElementById('inputEmail3').style.color ="black";
       document.getElementById('inputPassword3').style.color ="black";
   }, 3000)
     return false;
@@ -85,11 +85,11 @@ function validatelogin()
   else if(username=='')
   {
     alert("Please enter the username field");
-    document.getElementById('inputUsername3').style.backgroundColor ="red";
-    document.getElementById('inputUsername3').style.color ="white";
+    document.getElementById('inputEmail3').style.backgroundColor ="red";
+    document.getElementById('inputEmail3').style.color ="white";
     setTimeout(function(){
-      document.getElementById('inputUsername3').style.backgroundColor = "white";
-      document.getElementById('inputUsername3').style.color ="black";
+      document.getElementById('inputEmail3').style.backgroundColor = "white";
+      document.getElementById('inputEmail3').style.color ="black";
     }, 3000)
     return false;
   }
