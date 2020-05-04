@@ -9,6 +9,7 @@ if (!myvar)
   let form = document.createElement('form');
   form.setAttribute("action", "login.php");
   form.setAttribute("method", "post");
+  form.setAttribute("name", "loginpage");
   form.setAttribute("onsubmit", "return validatelogin()");
   section.appendChild(form);
   let div1 = document.createElement('div');
