@@ -32,17 +32,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       }
       else {
         $conn->close();
-        // return include 'index.php';
+        include 'index.php';
         echo '<script type="text/JavaScript">',
               'alert("Please enter the email field");',
               '</script>'
               ;
-        header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+        // header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       }
     }
     else {
       $conn->close();
-      // return include 'index.php';
+      include 'index.php';
       //header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       echo '<script type="text/JavaScript">',
             'alert("Please enter the password field");',
