@@ -15,7 +15,7 @@ if (!myvar)
   let div1 = document.createElement('div');
   form.appendChild(div1);
   let input1 = document.createElement('input');
-  input1.setAttribute("type", "text");
+  input1.setAttribute("type", "email");
   input1.setAttribute("class", "form-control");
   input1.setAttribute("id", "inputEmail3");
   input1.setAttribute("placeholder", "Email");
