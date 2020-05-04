@@ -9,6 +9,7 @@ if (!myvar)
   let form = document.createElement('form');
   form.setAttribute("action", "login.php");
   form.setAttribute("method", "post");
+  form.setAttribute("onsubmit", "return validatelogin()");
   section.appendChild(form);
   let div1 = document.createElement('div');
   form.appendChild(div1);
@@ -36,7 +37,6 @@ if (!myvar)
   input3.setAttribute("id", "login-submit");
   input3.setAttribute("type", "submit");
   input3.setAttribute("value", "Login");
-  input3.setAttribute("onsubmit", "return validatelogin()");
   div3.appendChild(input3);
   var addpostButton = document.getElementById('addpostButton');
   addpostButton.setAttribute("href", "#login");
