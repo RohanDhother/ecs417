@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       else {
         $conn->close();
         // return include 'index.php';
-        echo '<script type="text/JavaScript">',
+        echo '<script src="loginpage.js" type="text/JavaScript">',
               'NotPassword();',
               '</script>'
               ;
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     else {
       $conn->close();
       // return include 'index.php';
-      echo '<script type="text/JavaScript">',
+      echo '<script src="loginpage.js" type="text/JavaScript">',
             'NotUsername();',
             '</script>'
             ;
