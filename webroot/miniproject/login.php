@@ -33,13 +33,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       else {
         $conn->close();
         // return include 'index.php';
-        header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+        echo '<script type="text/JavaScript">',
+              'NotPassword();',
+              '</script>'
+              ;
+        // header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       }
     }
     else {
       $conn->close();
       // return include 'index.php';
-      header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+      echo '<script type="text/JavaScript">',
+            'NotUsername();',
+            '</script>'
+            ;
+      // header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
     }
 }
 }
