@@ -36,6 +36,7 @@
     input3.setAttribute("id", "login-submit");
     input3.setAttribute("type", "submit");
     input3.setAttribute("value", "Login");
+    input3.setAttribute("onsubmit", "return validatelogin()");
     div3.appendChild(input3);
     var addpostButton = document.getElementById('addpostButton');
     addpostButton.setAttribute("href", "#login");
@@ -49,6 +50,7 @@
       form.setAttribute("action", "logout.php");
       form.setAttribute("method", "post");
       form.setAttribute("id", "logout");
+      form.setAttribute("name","loginpage");
       login.appendChild(form);
       let br = document.createElement('br');
       form.appendChild(br);
@@ -60,3 +62,52 @@
       input.setAttribute("value", "Logout");
       div.appendChild(input);
     }
+function validatelogin()
+{
+  function validateaddpost()
+  {
+    var username = document.forms["loginpage"]["username"].value;
+    var password = document.forms["loginpage"]["password"].value;
+    if(username=='' && password=='')
+    {
+      alert("Please enter all field");
+      document.getElementById('username').style.backgroundColor ="red";
+      document.getElementById('password').style.backgroundColor ="red";
+      document.getElementById('username').style.color ="white";
+      document.getElementById('password').style.color ="white";
+      setTimeout(function(){
+        document.getElementById('username').style.backgroundColor = "white";
+        document.getElementById('password').style.backgroundColor = "white";
+        document.getElementById('username').style.color ="black";
+        document.getElementById('password').style.color ="black";
+    }, 3000)
+      return false;
+    }
+    else if(username=='')
+    {
+      alert("Please enter the username field");
+      document.getElementById('username').style.backgroundColor ="red";
+      document.getElementById('username').style.color ="white";
+      setTimeout(function(){
+        document.getElementById('username').style.backgroundColor = "white";
+        document.getElementById('username').style.color ="black";
+    }, 3000)
+      return false;
+    }
+    else if(password=='')
+    {
+      alert("Please enter the password field");
+      document.getElementById('password').style.backgroundColor ="red";
+      document.getElementById('password').style.color ="white";
+      setTimeout(function(){
+        document.getElementById('password').style.backgroundColor = "white";
+        document.getElementById('password').style.color ="black";
+    }, 3000)
+      return false;
+    }
+    else
+    {
+      return true;
+    }
+  }
+}
