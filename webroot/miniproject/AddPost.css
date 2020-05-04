@@ -2,7 +2,7 @@ body {width: 30%;
       margin: auto;
       padding-top: 1vw;
       background-image: url("background21.jpg");
-      background-size: contain;}
+      background-size: cover;}
 h1 { color: white;
   font-size: 2vw;
   padding-bottom: 1vw;
