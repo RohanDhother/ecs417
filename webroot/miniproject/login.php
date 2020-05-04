@@ -33,9 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       else {
         $conn->close();
         // return include 'index.php';
-        header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+        //header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
         echo '<script src="checkLogin.js" type="text/JavaScript">',
-              'NotPassword();',
+              'alert("Please enter the email field");',
               '</script>'
               ;
       }
@@ -43,9 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     else {
       $conn->close();
       // return include 'index.php';
-      header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
+      //header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');
       echo '<script src="checkLogin.js" type="text/JavaScript">',
-            'NotEmail();',
+            'alert("Please enter the password field");',
             '</script>'
             ;
       // header('Location: http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php');

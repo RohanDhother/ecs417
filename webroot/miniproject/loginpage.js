@@ -84,7 +84,7 @@ function validatelogin()
   }
   else if(username=='')
   {
-    alert("Please enter the username field");
+    alert("Please enter the email field");
     document.getElementById('inputEmail3').style.backgroundColor ="red";
     document.getElementById('inputEmail3').style.color ="white";
     setTimeout(function(){
