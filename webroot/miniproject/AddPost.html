@@ -5,27 +5,37 @@
     <link rel="stylesheet" href="AddPost.css" type="text/css">
   </head>
   <body>
-    <div id="addpost-box">
-     <h1>Add Blog</h1>
-      <form name="addpost" action="AddPost.php" onsubmit="return validateaddpost()" method="post">
-        <div id="top">
-          <div>
-            <input type="text" id="title" placeholder="Title" name="title">
-          </div>
-          <div>
-            <textarea name ="content" id="text" placeholder="Enter your text here"></textarea>
-          </div>
+    <article>
+      <section>
+        <div id="addpost-box">
+         <h1>Add Blog</h1>
+          <form name="addpost" action="AddPost.php" onsubmit="return validateaddpost()" method="post">
+            <div id="top">
+              <div>
+                <input type="text" id="title" placeholder="Title" name="title">
+              </div>
+              <div>
+                <textarea name ="content" id="text" placeholder="Enter your text here"></textarea>
+              </div>
+            </div>
+            <div id="bottom">
+              <div id="submit">
+                <input type="submit" value="Post">
+              </div>
+              <div id="preview">
+                <input type="button" onclick="Preview()" value="Preview">
+              </div>
+              <div id="clear">
+                <input type="button" onclick="Clear()" value="Clear">
+              </div>
+            </div>
+          </form>
         </div>
-        <div id="bottom">
-          <div id="submit">
-            <input type="submit" value="Post">
-          </div>
-          <div id="clear">
-            <input type="button" onclick="Clear()" value="Clear">
-          </div>
-        </div>
-      </form>
-    </div>
+      </section>
+      <section id="Blog">
+
+      </section>
+    </article>
     <script src="addpost.js"></script>
   </body>
 </html>
