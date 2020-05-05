@@ -205,14 +205,23 @@ hr {width: 100%;
     color: white;
     border-bottom: 2vw solid white;}
     /*Contact*/
-    #Contact {display: block;
-                  position: relative;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-                overflow: auto;}
-    #Contact h2 {font-size:2vw;
-      text-align: center;}
+      #Contact {display: block;
+                    position: relative;
+                    height: auto;
+                    width: auto;
+                  padding: 2vw 4vw;
+                overflow: auto;
+                  }
+      #Contact div {margin: auto;
+        padding: 2vw 1vw;
+      width: 30vw;
+      height: auto;
+      word-wrap: break-word;
+                     }
+      #Contact h2 {font-size:2vw;
+                      text-align: center;}
+      #Contact p {font-size: 1vw;
+                        text-align: center;}
     /*Right*/
     .right {float:left;
             width:auto;
@@ -233,7 +242,12 @@ hr {width: 100%;
       padding: 1vw;
                       border-radius: 4px;}
     /*Bottom*/
-      footer {height:auto;}
+      #footer {height:1vw;
+              width: auto;
+            bottom: 0;
+            left: 0;
+            margin-bottom: 0;
+          }
       .main {float:left;
             width: 100%;
             height: auto;
