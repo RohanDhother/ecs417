@@ -7,7 +7,7 @@ if (!myvar)
   section.setAttribute("class", "color");
   login.appendChild(section);
   let form = document.createElement('form');
-  form.setAttribute("action", "../miniproject/php/login.php");
+  form.setAttribute("action", "login.php");
   form.setAttribute("method", "post");
   form.setAttribute("name", "loginpage");
   form.setAttribute("onsubmit", "return validatelogin()");
@@ -48,7 +48,7 @@ else
     let loginText = document.createTextNode("You are logged in " + myvar);
     login.appendChild(loginText);
     let form = document.createElement('form');
-    form.setAttribute("action", "../miniproject/php/logout.php");
+    form.setAttribute("action", "logout.php");
     form.setAttribute("method", "post");
     form.setAttribute("id", "logout");
     form.setAttribute("name","loginpage");

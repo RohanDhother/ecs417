@@ -1,5 +1,5 @@
 <?php
   session_start();
-include "./html/main.html";
-include "./php/viewBlog.php";
+include "main.html";
+include "viewBlog.php";
 ?>
