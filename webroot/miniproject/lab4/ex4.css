@@ -1,0 +1,14 @@
+form, fieldset, legend {background-color: #EAFEDB;
+      width:700;}
+legend {text-align: center;
+        background-color: #377E22;
+        color: white;
+        width: 700;}
+.last_form {background-color: white;}
+.submit_bar {text-align: center;}
+button {background-color: #377E22;
+        color: white;
+        border-radius: 10%;
+        width: 100;
+        height: 30;
+        font-size: 10pt;}

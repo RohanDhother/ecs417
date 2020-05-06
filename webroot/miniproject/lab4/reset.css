@@ -1,0 +1,9 @@
+button, html, body, h1, h2, h3, hgroup, p, section, article, title, header, a, nav, figure, footer, img{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ text-decoration: none;
+}
+button {border: none;}

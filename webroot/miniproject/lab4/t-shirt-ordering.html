@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css" type="text/css"/>
+    <link rel="stylesheet" href="ex4.css" type="text/css"/>
+  </head>
+  <form method="GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+    <fieldset>
+      <legend>Shirt Order Form</legend>
+      <fieldset>
+        <p>
+        <label>Shirt Size</label>
+        <p>
+        <select name="shirt_size">
+          <optgroup>
+            <option>Choose size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </optgroup>
+        </select>
+        <p>
+        <label>Sleeves</label>
+        <p>
+        <input type="radio" name="sleeves" value="Short" checked>Short <br>
+        <p>
+        <input type="radio" name="sleeves" value="Long">Long <br>
+        <label>Long</label>
+        <p>
+        <label>Choose Shirt Colour</label>
+        <p>
+        <input type="color" name="color">
+        <p>
+        <label>Quantity</label>
+        <p>
+        <input type="number" min="1" max="10" name="quantity">
+        <p>
+        <label>Date Requested</label>
+        <p>
+        <input type="date" name="date">
+      </fieldset>
+      <fieldset>
+        <label>Name</label>
+        <p>
+        <input type="text" name="name">
+        <p>
+        <label>Email Address</label>
+        <p>
+        <input type="email" name="email">
+        <p>
+        <label>Telephone Number</label>
+        <p>
+        <input type="tel" pattern="[0-9]{2}[ -][0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" name="telephone">
+        <label>Example: 44-207-882-1234</label>
+      </fieldset>
+      <fieldset>
+        <label>Address</label>
+        <p>
+        <input type="text" name="address">
+        <p>
+        <label>City</label>
+        <p>
+        <input type="text" name="city" list="cities">
+        <datalist id="cities">
+          <optgroup>
+            <option value="Birmingham">Birmingham</option>
+            <option value="Glasgow">Glasgow</option>
+            <option value="London">London</option>
+            <option value="Manchester">Manchester</option>
+          </optgroup>
+        </datalist>
+        <p>
+        <label>Postcode</label>
+        <p>
+        <input type="text" name="postcode">
+      </fieldset>
+      <fieldset class="last_form">
+        <label>Please keep me informed about future shirt offerings</label>
+        <input type="checkbox" name="accept">
+        <p>
+        <div class="submit_bar">
+          <button type="submit">Submit
+          <button type="reset">Clear Form
+        </div>
+      </fieldset>
+    </form>
+</html>

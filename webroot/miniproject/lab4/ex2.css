@@ -1,0 +1,9 @@
+table, td, th {border:solid 1pt black;}
+img {border-radius: 20%;}
+td {text-align: center;}
+caption {background-color: darkred;
+        color: white;
+        font-size: 20pt;}
+th {background-color: lightgrey;
+    font-size: 16pt;}
+ .pic_space table{border-spacing: 0 15px;}

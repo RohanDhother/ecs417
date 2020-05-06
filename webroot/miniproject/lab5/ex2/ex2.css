@@ -1,0 +1,135 @@
+/*Header*/
+  #header {display: block;
+          background-color: lightgreen;
+          position: absolute;
+          width:1537;}
+  /*em*/
+  #header em {position: relative;
+             font-weight: bold;
+             font-size: 20pt;
+             line-height: 1.6;
+             left:10;}
+  /*a*/
+  header a {position: relative;
+            font-size: 16pt;
+            left: 40;}
+  /*header_alignment*/
+  #header_alignment_Education {position: relative;
+                               left: 70;}
+  #header_alignment_Skills {position: relative;
+                            left: 120;}
+/*Body*/
+  body {display: block;
+        position: absolute;}
+  /*Left*/
+    #left {float: left;
+           width: 16em;
+           display: block;
+           position: absolute;}
+    /*Research*/
+    #Research {position: relative;
+               height:8em;
+               background-color: lightgrey;
+               width: 16em;}
+    /*h3 and p*/
+    #Research h3, p {position: relative;
+                     left: 13;
+                     top: 10;}
+    /*CV*/
+    #CV {display: block;
+         background-color: lightgrey;
+         line-height: 1.6;
+         width: 16em;}
+    /*div*/
+    #CV div {position: relative;
+           left:13;}
+    /*Top3*/
+    #Top3 {background-color: lightgrey;
+           height: 310;
+           width: 16em;}
+    /*h3*/
+    #Top3 h3 {background-color: lightgreen;
+              font-size: 14pt;
+              line-height: 2.5;}
+    /*div*/
+    #Top3 div {margin-left: 1em;
+               margin-right: 1em;
+               background-color: white;
+               font-size: 12pt;
+               margin-bottom: 1em;
+               height: 270;}
+    /*em*/
+    #Top3 em {position: relative;
+              top: 35;
+              left: 15;}
+    /*img*/
+    #Top3 img {position: relative;
+               float: left;
+               top: 10;
+               left: 5;}
+  /*Main*/
+    #main {margin-left: 19em;
+           margin-right: 20em;
+           display: block;
+           position: absolute;
+           top: 72;
+           float: none;}
+    /*About_Myself*/
+    #About_Myself {float:left;
+                   width:700;
+                   font-size: 16pt;}
+    /*Education*/
+    #Education {position: absolute;
+                top:200;
+                display: block;
+                width:880;
+                font-size: 16pt;}
+    /*em*/
+    #Education em {text-align: left;}
+    figure {position:absolute;
+            display:inline-block;
+            width: 5em;
+            left: 680;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);}
+  /*Right*/
+    #right {position:absolute;
+            margin-left:76.1em;
+            width:20em;
+            display: block;}
+    /*Hobbies*/
+    #Hobbies{background-color: lightgrey;
+             height: 185;}
+    /*h3*/
+    #Hobbies h3 {background-color: lightgreen;
+                 font-size: 14pt;
+                 line-height: 2.5;}
+    /*div*/
+    #Hobbies div {margin-left: 1em;
+                  margin-right: 1em;
+                  background-color: white;
+                  font-size: 12pt;
+                  margin-bottom: 1em;
+                  height: 145;
+                  line-height: 1.6;
+                  display: inline-block;
+                  width: 18em;}
+    /*Top5*/
+    #Top5{background-color: lightgrey;
+          height: 235;}
+    /*h3*/
+    #Top5 h3 {background-color: lightgreen;
+              font-size: 14pt;
+              line-height: 2.5;}
+    /*div*/
+    #Top5 div {display: inline-block;
+               margin-left: 1em;
+               margin-right: 1em;
+               background-color: white;
+               font-size: 12pt;
+               margin-bottom: 1em;
+               height: 195;
+               line-height: 1.6;
+               width: 18em;}
+    /*p*/
+    #Top5 p { text-align: left;}

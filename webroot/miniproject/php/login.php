@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       }
       else {
         $conn->close();
-        include 'index.php';
+        include 'http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php';
         echo '<script type="text/JavaScript">',
               'alert("Password wrong");',
               '</script>'
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
     else {
       $conn->close();
-      include 'index.php';
+      include 'http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/index.php';
       echo '<script type="text/JavaScript">',
             'alert("Email Wrong");',
             '</script>'

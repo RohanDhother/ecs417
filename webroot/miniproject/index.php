@@ -1,5 +1,5 @@
 <?php
   session_start();
-include "main.html";
-include "viewBlog.php";
+include "http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/html/main.html";
+include "http://cakephp-mysql-persistent-rohandhotherecs417.bde1.qmul-eecs.openshiftapps.com/miniproject/php/viewBlog.php";
 ?>

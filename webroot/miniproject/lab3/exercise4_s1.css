@@ -1,0 +1,20 @@
+html   {background-color: #04151F;}
+hgroup {background-color:#04151F;}
+.text nav  {text-align: center;}
+.link_style a, h3 {color: #D3D4D9;}
+#title_color {color:#D3D4D9;}
+h1     {font-size: 18pt;}
+h2     {font-size: 12pt;}
+nav    {font-size: 16pt;
+        background-color: #2F1B25;
+        color: white;}
+img    {border: solid 5px;
+        border-top-color: #04151F;
+        border-right-color: #2F1B25;
+        border-bottom-color: #04151F;
+        border-left-color: #2F1B25;}
+.main_body {background-color: white;}
+#footer_background {background-color: #2F1B25;}
+h3 {font-size: 14pt;}
+body article{background-color: #104F55;
+            color: #93B7BE;}

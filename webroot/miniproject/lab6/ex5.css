@@ -1,0 +1,10 @@
+#header {background-color: #F2A83B;}
+#footer {background-color: #F2A83B;
+         width:392;}
+.edge {background-color: black;
+       border-radius: 1px;
+       border-color: white;
+       color: white;}
+.main {background-color: #F2F2F2;
+       color: #6A6A6A;}
+#Table {border-radius: 1;}
