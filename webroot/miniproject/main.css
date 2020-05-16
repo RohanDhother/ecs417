@@ -6,23 +6,18 @@ html {scroll-behavior: smooth;}
           height: auto;
           background-color: black;}
 /*Nav*/
-  #nav {
-        height: auto;
+  #nav {height: auto;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        /* background-image: url("background21.jpg");
-        background-size: cover; */
         position:fixed;
         top:0;
         z-index: 3;}
-  /*a*/
   #nav a, em {font-size: 1.2vw;}
-  #nav input, em {
-    padding: 2vw 2vw;
-    color: white;}
+  #nav input, em {padding: 2vw 2vw;
+                  color: white;}
   #nav input {background-color: inherit;}
   #nav em {font-weight: bold;
-            padding: 1vw 2vw;}
+           padding: 1vw 2vw;}
   #nav input:hover {background-color: white;
                     color: black;}
 /*body*/
@@ -33,224 +28,205 @@ html {scroll-behavior: smooth;}
         padding-top: 5vw;
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         background-image: url("background21.jpg");
-        background-size: contain;
-      }
+        background-size: contain;}
 hr {width: 100%;
     background-color:black;}
-    .left {
-          float:left;
+    .left {float:left;
           width: 80%;
           height: auto;}
     /*Me*/
-    #me {display: block;
-        position: relative;
-        width: 100%;
-        height: auto;
-        max-width: 50vw;
-      margin: auto;}
-  #me img {height: auto;
+      #me {display: block;
+          position: relative;
           width: 100%;
-           max-width: 100%;
-           max-width: 50vw;
-        z-index: 1;}
-  #me h1 {position: absolute;
-          top: 50%;
-          left: 50%;
-          color: white;
-        transform: translate(-50%, -50%);
-      font-size: 5vw;
-    text-align: center;
-    z-index: 2;}
-    /*About_Myself*/
-    #AboutMyself {display: block;
-                  position: relative;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-              overflow: auto;
-                }
-    #AboutMyself div {margin: auto;
-      padding: 2vw 1vw;
-    width: 30vw;
-    height: auto;
-    word-wrap: break-word;
-                   }
-    #AboutMyself h2 {font-size:2vw;
-                    text-align: center;}
-    #AboutMyself p {font-size: 1vw;
-                      text-align: center;}
-
-    /*Skills and Achievements*/
-    #SkillsandAchievements {display: block;
-                  position: relative;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-              overflow: auto;
-            }
-    #SkillsandAchievements h2 {font-size:2vw;
-      text-align: center;}
-    #grid-skills {display: grid;
-                  margin: auto;
-                grid-template-columns: auto auto;
-              grid-column-gap: 1vw;
-              grid-row-gap: 1vw;
-              padding: 1vw 1vw;
+          height: auto;
+          max-width: 50vw;
+        margin: auto;}
+      #me img {height: auto;
+               width: 100%;
+               max-width: 100%;
+               max-width: 50vw;
+               z-index: 1;}
+      #me h1 {position: absolute;
+              top: 50%;
+              left: 50%;
+              color: white;
+              transform: translate(-50%, -50%);
+              font-size: 5vw;
+              text-align: center;
+              z-index: 2;}
+    /*Right*/
+      .right {float:left;
+              width:auto;
+              height: auto;
               font-size: 1vw;
-              max-width: 50vw;}
-    #grid-skills div {text-align: center;
-                      padding: 1vw 1vw;
-                    font-size:1vw;}
-    /*Education and Qualifications*/
-    #EducationandQualifications {display: block;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-              overflow: auto;}
-    #EducationandQualifications h2 {font-size:2vw;
-      text-align: center;}
+              color: white;}
+      #login-box {padding: 1vw 2vw;
+                  overflow:auto;
+                  border-radius: 4px;}
+      #login-box div {padding-bottom: 1vw;}
+      #login-box input {font-size: 1vw;
+                        padding: 1vw;
+                        border-radius: 2px;}
+      #login-submit {width: 100%;}
+      #logout-submit {font-size: 1vw;
+                      padding: 1vw;
+                      border-radius: 4px;}
+    /*About_Myself*/
+      #AboutMyself {display: block;
+                    position: relative;
+                    height: auto;
+                    width: auto;
+                    padding: 2vw 4vw;
+                    overflow: auto;}
+      #AboutMyself div {margin: auto;
+                        padding: 2vw 1vw;
+                        width: 30vw;
+                        height: auto;
+                        word-wrap: break-word;}
+      #AboutMyself h2 {font-size:2vw;
+                      text-align: center;}
+      #AboutMyself p {font-size: 1vw;
+                      text-align: center;}
+    /*Skills and Achievements*/
+      #SkillsandAchievements {display: block;
+                              position: relative;
+                              height: auto;
+                              width: auto;
+                              padding: 2vw 4vw;
+                              overflow: auto;}
+      #SkillsandAchievements h2 {font-size:2vw;
+                                 text-align: center;}
+      #grid-skills {display: grid;
+                    margin: auto;
+                    grid-template-columns: auto auto;
+                    grid-column-gap: 1vw;
+                    grid-row-gap: 1vw;
+                    padding: 1vw 1vw;
+                    font-size: 1vw;
+                    max-width: 50vw;}
+      #grid-skills div {text-align: center;
+                        padding: 1vw 1vw;
+                        font-size:1vw;}
+
+    .timeline-left {float: left;
+                    height: auto;
+                    width: auto;}
+    .timeline-left p {height: 5vw;
+                      padding-top: 1vw;
+                      padding-bottom: 1vw;
+                      padding-right: 1vw;}
+    .timeline {background-color: white;
+               width: 0.1vw;
+               background-color: white;
+               height: 15vw;
+               float: left;}
+    #circle {border-right: 0.1vw solid white;
+             height: auto;}
+    .timeline-right {float: left;
+                     width: 10vw;
+                     padding-left: 1vw;}
+    .timeline-right p {padding-top: 1vw;
+                       padding-bottom: 1vw;
+                       height: 5vw}
     #timeline-container {width: 20vw;
                         position: relative;
                         left: 50%;
                         margin-left: -50px;
                         height: auto;
-                        font-size:1vw;
-                       }
-    .timeline-left {float: left;
-      height: auto;
-      width: auto;}
-    .timeline-left p {
-      height: 5vw;
-      padding-top: 1vw;
-    padding-bottom: 1vw;
-    padding-right: 1vw;}
-    .timeline {
-    background-color: white;
-              width: 0.1vw;
-              background-color: white;
-  height: 15vw;
-  float: left;}
-  #circle {border-right: 0.1vw solid white;
-            height: auto;}
-    .timeline-right {float: left;
-      width: 10vw;
-      padding-left: 1vw;}
-    .timeline-right p {padding-top: 1vw;
-    padding-bottom: 1vw;
-    height: 5vw}
+                        font-size:1vw;}
+    /*Education and Qualifications*/
+      #EducationandQualifications {display: block;
+                                   height: auto;
+                                   width: auto;
+                                   padding: 2vw 4vw;
+                                   overflow: auto;}
+      #EducationandQualifications h2 {font-size:2vw;
+                                      text-align: center;}
     /*Experience*/
-    #Experience {display: block;
-                  position: relative;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-              overflow: auto;}
-    #Experience h2 {font-size:2vw;
-      text-align: center;}
+      #Experience {display: block;
+                   position: relative;
+                   height: auto;
+                   width: auto;
+                   padding: 2vw 4vw;
+                overflow: auto;}
+      #Experience h2 {font-size:2vw;
+                      text-align: center;}
     /*Portfolio*/
-    #Portfolio {display: block;
+      #Portfolio {display: block;
                   position: relative;
                   height: auto;
                   width: auto;
-                padding: 2vw 4vw;
-                overflow: auto;}
-    #Portfolio h2 {font-size:2vw;
-      text-align: center;}
-    .Portfolio-div {width: 80%;
-                    margin: auto;}
-    .Portfolio-div-div {width: 16.6%; text-align: center;
-                        padding: 1vw 1vw;
-                        font-size: 1vw;
-                        float: left;}
-    .Portfolio-div-div div {padding: 1vw 1vw; font-size: 1vw;}
-    .Portfolio-div-div input {width: 7vw;
-                              height: 3vw;}
+                  padding: 2vw 4vw;
+                  overflow: auto;}
+      #Portfolio h2 {font-size:2vw;
+                     text-align: center;}
+      .Portfolio-div {width: 80%;
+                      margin: auto;}
+      .Portfolio-div-div {width: 16.6%; text-align: center;
+                          padding: 1vw 1vw;
+                          font-size: 1vw;
+                          float: left;}
+      .Portfolio-div-div div {padding: 1vw 1vw;
+                              font-size: 1vw;}
+      .Portfolio-div-div input {width: 7vw;
+                                height: 3vw;}
     /*Blog*/
-    #Blog {display: block;
-                  position: relative;
-                  height: auto;
-                  width: auto;
-                padding: 2vw 4vw;
-                overflow: auto;}
-    #Blog h2 {font-size:2vw;
-      text-align: center;}
-    #Blog input {font-size: 1vw;
-                background-color: black;
-                border-radius: 4px;
-                color: white;}
-    #Blog-top {padding: 1vw;
-    width: 50%;
-    margin: auto;
-    background-color: inherit;
-    color: white;}
-    .Blog-box {
-                padding: 1vw;
-                width: 50%;
-                margin: auto;
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;}
-    .dateandtime {float: right;
-                  font-size: 0.8vw;}
-    .title {font-weight: bold;
-            font-size: 1vw;}
-    .text {font-size: 1vw;}
-    #addpostButton {font-size: 1vw;
-      padding: 1vw;
+      #Blog {display: block;
+             position: relative;
+             height: auto;
+             width: auto;
+             padding: 2vw 4vw;
+             overflow: auto;}
+      #Blog h2 {font-size:2vw;
+                text-align: center;}
+      #Blog input {font-size: 1vw;
+                   background-color: black;
+                   border-radius: 4px;
+                   color: white;}
+      #Blog-top {padding: 1vw;
+                 width: 50%;
+                 margin: auto;
+                 background-color: inherit;
+                 color: white;}
+      .Blog-box {padding: 1vw;
+                 width: 50%;
+                 margin: auto;
+                 background-color: rgba(0, 0, 0, 0.5);
+                 color: white;}
+      .dateandtime {float: right;
+                    font-size: 0.8vw;}
+      .title {font-weight: bold;
+              font-size: 1vw;}
+      .text {font-size: 1vw;}
+      #addpostButton {font-size: 1vw;
+                      padding: 1vw;
                       border-radius: 4px;
-                    background-color: inherit;}
-    #Blog-bottom {padding: 1vw;
-    width: 50%;
-    margin: auto;
-    background-color: inherit;
-    color: white;
-    border-bottom: 2vw solid white;}
+                      background-color: inherit;}
+      #Blog-bottom {padding: 1vw;
+                    width: 50%;
+                    margin: auto;
+                    background-color: inherit;
+                    color: white;
+                    border-bottom: 2vw solid white;}
     /*Contact*/
       #Contact {display: block;
-                    position: relative;
-                    height: auto;
-                    width: auto;
-                  padding: 2vw 4vw;
-                overflow: auto;
-                  }
+                position: relative;
+                height: auto;
+                width: auto;
+                padding: 2vw 4vw;
+                overflow: auto;}
       #Contact div {margin: auto;
-        padding: 2vw 1vw;
-      width: 30vw;
-      height: auto;
-      word-wrap: break-word;
-                     }
+                    padding: 2vw 1vw;
+                    width: 30vw;
+                    height: auto;
+                    word-wrap: break-word;}
       #Contact h2 {font-size:2vw;
-                      text-align: center;}
+                   text-align: center;}
       #Contact p {font-size: 1vw;
-                        text-align: center;}
-    /*Right*/
-    .right {float:left;
-            width:auto;
-            height: auto;
-            font-size: 1vw;
-            color: white;}
-    #login-box {
-    padding: 1vw 2vw;
-    overflow:auto;
-    border-radius: 4px;}
-    #login-box div {
-                  padding-bottom: 1vw;}
-    #login-box input {font-size: 1vw;
-      padding: 1vw;
-                      border-radius: 2px;}
-    #login-submit {width: 100%;}
-    #logout-submit {font-size: 1vw;
-      padding: 1vw;
-                      border-radius: 4px;}
-    /*Bottom*/
-      #footer {height:1vw;
-              width: auto;
-            bottom: 0;
-            left: 0;
-            margin-bottom: 0;
-          }
-      .main {float:left;
-            width: 100%;
-            height: auto;
-            height: auto;}
+                  text-align: center;}
+.main {float:left;
+       width: 100%;
+       height: auto;
+       height: auto;}
 .color {color: white;
         background-color: rgba(0, 0, 0, 0.5);}

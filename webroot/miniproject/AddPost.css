@@ -1,79 +1,79 @@
-body {      padding-top: 1vw;
+body {padding-top: 1vw;
       background-image: url("background21.jpg");
       background-size: cover;}
-h1 { color: white;
-  font-size: 2vw;
-  padding-bottom: 1vw;
-  text-align: center;}
-#addpost-box {width: 30%;
-      margin: auto;
-      color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-padding: 1vw 2vw;
-overflow:auto;
-border-radius: 4px;
-color: white;
-overflow: auto;}
-textarea {
-          resize: none;
-          width: 100%;
-          min-height: 10vw;}
-#text {height: 5vw;}
-#addpost-box input, textarea {font-size: 1vw;
-                  border-radius: 2px;
-                  padding: 1vw 1vw;}
-#top input, textarea {width: 100%;}
-#top div {padding-bottom: 1vw;}
-#bottom {padding: 1vw 1vw;
-        width: 20vw;
-        margin: auto;}
-#preview {float: left; width: auto;
-        padding-right: 1vw;
-        padding-left: 1vw;}
-#preview input {width: 6vw;}
-#submit {float: left; width: auto;
-        padding-right: 1vw;}
-#submit input {width: 5vw;}
-#clear {float: left; width: auto;
-        padding-left: 1vw;}
-#clear input {width: 5vw;}
-#Blog {display: block;
-              position: relative;
-              height: auto;
-              width: auto;
-            padding: 2vw 4vw;
-            overflow: auto;}
-#Blog h2 {font-size:2vw;
-  text-align: center;}
-#Blog input {font-size: 1vw;
-            background-color: black;
-            border-radius: 4px;
-            color: white;}
-#Blog-top {padding: 1vw;
-width: 50%;
-margin: auto;
-background-color: inherit;
-color: white;}
-.Blog-box {
-            padding: 1vw;
-            width: 50%;
-            margin: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;}
-.dateandtime {float: right;
-              font-size: 0.8vw;}
-.title {font-weight: bold;
-        font-size: 1vw;}
-.text {font-size: 1vw;}
-#addpostButton {font-size: 1vw;
-  padding: 1vw;
+h1 {color: white;
+    font-size: 2vw;
+    padding-bottom: 1vw;
+    text-align: center;}
+/*Adposts*/
+    #addpost-box {width: 30%;
+                  margin: auto;
+                  color: white;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  padding: 1vw 2vw;
+                  overflow:auto;
                   border-radius: 4px;
-                background-color: inherit;}
-#Blog-bottom {padding: 1vw;
-width: 50%;
-margin: auto;
-background-color: inherit;
-color: white;
-border-bottom: 2vw solid white;}
+                  color: white;
+                  overflow: auto;}
+    #addpost-box input, textarea {font-size: 1vw;
+                                  border-radius: 2px;
+                                  padding: 1vw 1vw;}
+    textarea {resize: none;
+              width: 100%;
+              min-height: 10vw;}
+    #text {height: 5vw;}
+    #top input, textarea {width: 100%;}
+    #top div {padding-bottom: 1vw;}
+    #bottom {padding: 1vw 1vw;
+            width: 20vw;
+            margin: auto;}
+    #preview {float: left; width: auto;
+            padding-right: 1vw;
+            padding-left: 1vw;}
+    #preview input {width: 6vw;}
+    #submit {float: left; width: auto;
+            padding-right: 1vw;}
+    #submit input {width: 5vw;}
+    #clear {float: left; width: auto;
+            padding-left: 1vw;}
+    #clear input {width: 5vw;}
+    #addpostButton {font-size: 1vw;
+                    padding: 1vw;
+                    border-radius: 4px;
+                    background-color: inherit;}
+/*Blog*/
+  #Blog {display: block;
+        position: relative;
+        height: auto;
+        width: auto;
+        padding: 2vw 4vw;
+        overflow: auto;}
+  #Blog h2 {font-size:2vw;
+            text-align: center;}
+  #Blog input {font-size: 1vw;
+               background-color: black;
+               border-radius: 4px;
+               color: white;}
+  #Blog-top {padding: 1vw;
+             width: 50%;
+             margin: auto;
+             background-color: inherit;
+             color: white;}
+  .Blog-box {padding: 1vw;
+             width: 50%;
+             margin: auto;
+             background-color: rgba(0, 0, 0, 0.5);
+             color: white;}
+  .dateandtime {float: right;
+                font-size: 0.8vw;}
+  .title {font-weight: bold;
+          font-size: 1vw;}
+  .text {font-size: 1vw;}
+  #Blog-bottom {padding: 1vw;
+                width: 50%;
+                margin: auto;
+                background-color: inherit;
+                color: white;
+                border-bottom: 2vw solid white;}
 .color {color: white;
         background-color: rgba(0, 0, 0, 0.5);}

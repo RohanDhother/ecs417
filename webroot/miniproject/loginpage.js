@@ -16,7 +16,6 @@ if (!myvar)
   form.appendChild(div1);
   let input1 = document.createElement('input');
   input1.setAttribute("type", "email");
-  input1.setAttribute("class", "form-control");
   input1.setAttribute("id", "inputEmail3");
   input1.setAttribute("placeholder", "Email");
   input1.setAttribute("name", "email");
@@ -25,7 +24,6 @@ if (!myvar)
   form.appendChild(div2);
   let input2 = document.createElement('input');
   input2.setAttribute("type", "password");
-  input2.setAttribute("class", "form-control");
   input2.setAttribute("id", "inputPassword3");
   input2.setAttribute("placeholder", "Password");
   input2.setAttribute("name", "password");
