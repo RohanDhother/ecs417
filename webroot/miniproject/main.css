@@ -108,18 +108,32 @@ hr {width: 100%;
                         padding: 1vw 1vw;
                         font-size:1vw;}
 
-    .timeline-left {float: left;
+    .timeline-left-EaQ {float: left;
                     height: auto;
                     width: auto;}
-    .timeline-left p {height: 5vw;
+    .timeline-left-EaQ p {height: 5vw;
                       padding-top: 1vw;
                       padding-bottom: 1vw;
                       padding-right: 1vw;}
-    .timeline {background-color: white;
+    #timeline-2017 {padding-bottom: 11vw;}
+    #timeline-2019 {padding-bottom: 8vw;}
+    .timeline-left-E {float: left;
+                    height: auto;
+                    width: auto;}
+    .timeline-left-E p {height: 5vw;
+                      padding-top: 1vw;
+                      padding-bottom: 1vw;
+                      padding-right: 1vw;}
+    .timeline-EaQ {background-color: white;
                width: 0.1vw;
                background-color: white;
-               height: 15vw;
+               height: 47vw;
                float: left;}
+     .timeline-E {background-color: white;
+                width: 0.1vw;
+                background-color: white;
+                height: 15vw;
+                float: left;}
     #circle {border-right: 0.1vw solid white;
              height: auto;}
     .timeline-right {float: left;
@@ -128,6 +142,7 @@ hr {width: 100%;
     .timeline-right p {padding-top: 1vw;
                        padding-bottom: 1vw;
                        height: 5vw}
+    #timeline-GCSE {padding-bottom: 4vw;}
     #timeline-container {width: 20vw;
                         position: relative;
                         left: 50%;

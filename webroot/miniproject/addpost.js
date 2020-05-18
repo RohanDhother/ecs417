@@ -1,4 +1,4 @@
-function Preview()
+function Preview() //This function previews the post
 {
   if(!validateaddpost())
   {
@@ -63,7 +63,7 @@ function Preview()
     blog.appendChild(blogbottom);
   }
 }
-function Clear()
+function Clear() //This function clears all fields
 {
   if(confirm("Are you Sure?"))
   {
@@ -79,7 +79,7 @@ function Clear()
     blog.classList.remove("color");
   }
 }
-function validateaddpost()
+function validateaddpost() //This functions shows the errors
 {
   var title = document.forms["addpost"]["title"].value;
   var text = document.forms["addpost"]["text"].value;

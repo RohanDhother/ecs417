@@ -1,4 +1,4 @@
-function LoadBlog(postlists)
+function LoadBlog(postlists) //This function displays the posts
 {
   var posts = document.getElementById('Posts');
         var i = 0;

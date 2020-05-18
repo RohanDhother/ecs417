@@ -1,3 +1,4 @@
+//login page
 var login = document.getElementById('login');
 if (!myvar)
 {
@@ -61,7 +62,7 @@ else
     input.setAttribute("value", "Logout");
     div.appendChild(input);
   }
-function validatelogin()
+function validatelogin() //This displays error message
 {
   var username = document.forms["loginpage"]["email"].value;
   var password = document.forms["loginpage"]["password"].value;
