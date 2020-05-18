@@ -35,7 +35,7 @@ function Preview() //This function previews the post
     }
     let month = months[d.getMonth()];
     let year = d.getFullYear();
-    let hour = d.getHours();
+    let hour = d.getHours()-1;
     let minutes = d.getMinutes();
     let dateandtimeContent = day +day_end + " " + month + " " + year + ", " + hour +":" + minutes + " UTC";
     let blogbox = document.createElement('div');
